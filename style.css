@@ -233,30 +233,13 @@ html, body {
     opacity: 0;
 }
 
-
-
-/*Footer*/
-
-nav {
-	padding-bottom: 20px;
-}
-
-ul {
-	list-style: none;
-	text-align: center;
-}
-
-li {
-	display: inline-block;
-	margin-left: 10px;
-	margin-right: 10px;
-}
+/* Links */
 
 a {
 	text-decoration: none;
 	font-family: sans-serif;
 	color: #7aa696;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 a:hover {
