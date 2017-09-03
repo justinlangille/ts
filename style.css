@@ -1,0 +1,276 @@
+/*Images and Animation*/
+
+/*Front Leaf Left*/
+
+.sleft {
+	left: -15px;
+    -moz-animation: 3s ease 0s normal none infinite swing;
+    -moz-transform-origin: bottom left;
+    -webkit-animation:swing 3s infinite ease-in-out;
+    -webkit-transform-origin:bottom left;
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-1deg)}
+    50%{-moz-transform:rotate(-1deg)}
+    100%{-moz-transform:rotate(-1deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+/*Left Leaf Fan*/
+
+.slefft {
+	left: -15px;
+    -moz-animation: 3s ease 0s normal none infinite swing;
+    -moz-transform-origin: bottom left;
+    -webkit-animation:swing 5s infinite ease-in-out;
+    -webkit-transform-origin:bottom left;
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-1deg)}
+    50%{-moz-transform:rotate(-1deg)}
+    100%{-moz-transform:rotate(-1deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+/*Front Leaf Right Mid*/
+
+
+.sright {
+	right: -15px;
+    -moz-animation: 3s ease 0s normal none infinite swing;
+    -moz-transform-origin: top right;
+    -webkit-animation:swing 3s infinite ease-in-out;
+    -webkit-transform-origin:right;
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-1deg)}
+    50%{-moz-transform:rotate(1deg)}
+    100%{-moz-transform:rotate(-1deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+/*Front Leaf Right Mid Upper */
+
+.srightt {
+	right: -15px;
+    -moz-animation: 3s ease 0s normal none infinite swing;
+    -moz-transform-origin: bottom right;
+    -webkit-animation:swing 6s infinite ease-in-out;
+    -webkit-transform-origin: bottom right;
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-1deg)}
+    50%{-moz-transform:rotate(1deg)}
+    100%{-moz-transform:rotate(-1deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-1deg)}
+    50%{-webkit-transform:rotate(1deg)}
+    100%{-webkit-transform:rotate(-1deg)}
+}
+
+/*Image Stacking*/
+
+#imga
+{
+z-index: 70;
+}
+
+#imgb
+{
+z-index: 60;
+}
+
+#imgc
+{
+z-index: 50;
+}
+
+#imgd
+{
+z-index: 40;
+}
+
+#imge
+{
+z-index: 30;
+}
+
+#imgf
+{
+z-index: 20;
+}
+
+#imgg
+{
+z-index: 10;
+}
+
+/*Header And Alignment*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.bg {
+	background-color: #00BD77;
+	height: 769px;
+	width: 100%;
+	top: 0px;
+	position: absolute;
+}
+
+.left img{
+  position: absolute;
+  top: 0px;
+  left: -10px;
+}
+
+.right img{
+  position: absolute;
+  top: 0px;
+  right: -10px;
+}
+
+.header_text {
+  margin: 0;
+  line-height: 600px;
+  color: white;
+   text-align: center;
+ }
+
+/*Font Styles*/
+
+#bright {
+	color: #00BD77;
+}
+
+
+#bold {
+	font-weight: bold;
+
+}
+
+#italic {
+	font-style: italic;
+	color: #4c7264;
+}
+
+#bolditalic {
+	font-weight: bold;
+	font-style: italic;
+	color: #4c7264;
+}
+
+#code {
+    font-family: Courier;
+    background-color: #BDD3CB;
+}
+
+/* Body */
+
+.bleft img{
+  position: absolute;
+  left: -15px;
+  margin-top: 60px;
+}
+
+.bright img{
+  position: absolute;
+  right: -10px;
+}
+
+.bio {
+
+  font-family: sans-serif;
+  color: #003622;
+/*  margin: 10% 10% 0 10%;*/
+  margin-top: 10%;
+  overflow: auto;
+}
+
+.bio p {
+    font-size: 1.2em;
+    text-indent: 50px;
+}
+
+.bio div {
+  max-width: 50%;
+}
+
+.bio-blurb {
+/*  margin-top: 5%;*/
+  margin: 5% 10% 0 10%;
+}
+
+.bio div:nth-child(odd) {
+ float: right;
+ clear: both;
+ text-align: right;
+}
+
+.bio div:nth-child(even) {
+  float: left;
+  clear: both;
+  text-align: left;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+
+/*Footer*/
+
+nav {
+	padding-bottom: 20px;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #7aa696;
+	font-size: 0.9em;
+}
+
+a:hover {
+	color: #19a571;
+	font-style: italic;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 600px) {
+	.bio {
+		margin-top: 40%;
+	}
+  ..bio div {
+  max-width: 95%;
+}
+}

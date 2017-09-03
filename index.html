@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, width=device=width, initial-scale=1.0">
+	<title>The Hidden Jungle</title>
+	
+<!-- CSS stylesheets -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+<!-- JQuery stylesheets -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="jquery.scrollstop.js"></script>
+
+
+</head>
+<body>
+
+<div id="wrap">
+
+<header class="bg">
+
+	<div class="left">
+		<img id="imga" class="sleft" src="images/leaf_left_bottom.png">
+		<img id="imgb" src="images/sticks_left.png">
+		<img id="imgc" src="images/hills_left.png">	
+		<img id="imgd" class="slefft" src="images/leaf_fan_left.png">
+		<img id="imge" src="images/leaf_back_leaf.png">
+	</div>
+
+	<div class="header_text">
+	<h1>Hello!</h1>
+	</div>
+	
+	<div class="right">
+		<img id="imga" class="sright" src="images/tealeaf_bottom.png">
+		<img id="imgb" class="srightt" style= "right: -15px;" src="images/tealeaf_top.png">
+		<img id="imgc" src="images/leaf_right_btm_bck.png">
+		<img id="imgd" src="images/leaf_right_btm_bck2.png">
+		<img id="imge" src="images/sticks_right.png">
+		<img id="imgf" src="images/hills_right.png">
+		<img id="imgg" src="images/leaf_back_right_top.png">
+	</div>
+
+
+</header>
+
+<div style="height: 800px;"></div>
+
+
+<div class="bio">
+
+	<div class="bio-blurb hidden">
+	<p>My first experience with coding was an excited 12 year old with his first angelfire website. (It looked something like <a href="https://www.buzzfeed.com/ryanhatesthis/17-angelfire-pages-that-are-still-up-right-now?utm_term=.osro33AEv#.hqJrEENyp">this</a>) Why I felt the need to have my own personal page to catalog all the anime I liked escapes me, but I will never forget the frustrated hours I spent, wringing my heads and cursing the heavens, just trying to get that one image link to work.</p>
+	<p id="italic">"Why O Why won't it work? I've done everything!"</p>
+	<p id="italic">"It's just <span id="code">img src=""</span> right? That's what I typed!"</p>
+	<p id="italic">"It must be broken!"</p>
+	<p>In my darkest hour, just as I was ready to give up, I realized that my filename had <span id="bold">10</span> underscores in a row, not 9. And voilà! It was up and running. Needless to say, learning about <span id="bright">snake_case</span> and <span id="bright">camelCase</span> were blessings years down the road.</p>
+	</div>
+
+	<div class="bio-blurb hidden">
+	<p>Despite my initial crash and burn, building themes and the power of mark up languages has continued to really interest me. I've spent most of my life focused on the artistic side of design, pursuing illustration, graphic design and other forms of visual art but the itch to build has never really gone away. </p>
+	</div>
+
+	<div class="bio-blurb hidden">
+	<p>Working at Shopify really helped revitalize my interest in learning to code, as a <span id="bold">Guru</span> theme related calls and chats were always my favorite and the possibilities seemed endless. Moving to the <span id="bold">Tier 2</span> team has helped me learn a lot more about how websites and web applications run from the front end to the back in a way that I couldn't have imagined before starting the job.</p>
+	</div>
+
+	<div class="bio-blurb hidden">
+	<p>In my off time over the past couple of years I've played around with website building and using the wealth of online resources to learn as much as I can about and brush up on <span id="italic">CSS</span>, <span id="italic">HTML</span>, <span id="italic">Javascript</span> and more recently <span id="italic">Ruby</span>, <span id="italic">SCSS</span> and <span id="italic">JQuery</span> and I get more excited with each new function and possibility I find.</p>
+	</div>
+
+	<div class="bio-blurb hidden">
+	<p>I recently had the opportunity to take part in a six week code learning bootcamp which was a deep dive into learning <span id="italic">Ruby</span>, <span id="italic">Github</span> and version control, using the command line and building web apps with <span id="italic">Sinatra</span> and then <span id="italic">Rails</span>. It was a great experience that taught me a lot and really reignited my passion for building functional and good looking UX.</p>
+	</div>
+
+	<div class="bio-blurb hidden">
+	<p>Since starting at Shopify I've always been interested in the Theme Specialist position and would be honoured to join the team.</p>
+	</div>
+
+</div>
+
+	<div class="bright">
+	<img id="imga" src="images/m_leafbr.png">
+	<img id="imgb" class="sright" src="images/m_leafb.png">
+	</div>
+
+
+</div>
+
+<script>
+
+$(function(){
+  $('.bio').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.hidden').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+        }); 
+    });
+});
+
+
+</script>
+
+</body>
+
+
+
+
+
